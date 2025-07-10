@@ -1,0 +1,40 @@
+/* ----------- 全体のデザイン設定 ----------- */
+body {
+  font-family: sans-serif;      /* 文字のフォントをシンプルに（見やすく） */
+  text-align: center;           /* テキストやボタンを中央揃えにする */
+  background-color: #f8f8f8;    /* 背景色を明るいグレーにする */
+  margin: 0;                    /* 余白をなくす（画面いっぱいに） */
+  padding: 0;                   /* 上下左右の余白をなくす */
+}
+
+/* ----------- スコアとハイスコアの表示エリア ----------- */
+#score-area {
+  margin: 10px;                 /* 周りに少しスペースを取る */
+  font-size: 1.2em;             /* 文字を少し大きくして見やすくする */
+}
+
+/* ----------- ゲームが表示されるエリア ----------- */
+#game-area {
+  position: relative;           /* 子要素を自由に配置できるようにする */
+  width: 100vw;                 /* 画面の横幅いっぱい（vw = viewport width） */
+  height: 60vh;                 /* 高さは画面の60%（vh = viewport height） */
+  background-color: #ddd;       /* ゲームエリアの背景色（グレー） */
+  overflow: hidden;             /* はみ出した敵が見えないようにする */
+  margin: 10px auto;            /* 上下に余白をつけて中央に配置 */
+}
+
+/* ----------- 敵キャラの見た目（赤い丸） ----------- */
+.enemy {
+  position: absolute;           /* ゲームエリア内の好きな場所に置けるようにする */
+  width: 60px;                  /* 幅60ピクセル */
+  height: 60px;                 /* 高さ60ピクセル（正方形） */
+  background-color: crimson;   /* 赤っぽい色にする（敵っぽさ） */
+  border-radius: 50%;          /* 丸くする（100%だと円になる） */
+  cursor: pointer;             /* マウスを乗せると指のマークになる（タップできそうに見せる） */
+}
+
+/* ----------- スタートボタンの見た目 ----------- */
+#start-btn {
+  font-size: 1em;               /* ボタンの文字サイズ */
+  padding: 10px 20px;           /* ボタン内の上下左右の余白（押しやすくする） */
+}
